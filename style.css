@@ -252,6 +252,7 @@ body {
 
 .online-card {
   width: 342px;
+  margin-right:24px;
 }
 .img {
   height: 400px;

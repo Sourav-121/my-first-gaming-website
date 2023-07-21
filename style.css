@@ -4,7 +4,8 @@ body {
 }
 
 /* nav-styles */
-.nav {
+.nav,
+.sec-gamer {
   display: flex;
   justify-content: space-between;
   padding: 0 240px;
@@ -129,4 +130,43 @@ body {
 }
 .banner-img-23-1 {
   margin-right: 100px;
+}
+.btn-2 {
+  background: #4ec5f7;
+}
+
+/* sec-gamer */
+
+.sec-one-div-two {
+  text-align: right;
+  padding: 90px 0 90px 0;
+}
+.sec-one-div-one {
+  padding: 50px 0 50px 0;
+}
+.sec-one-div-two h3 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.sec-one-describtion {
+  color: #534c64;
+
+  font-size: 1.1rem;
+
+  font-weight: 400;
+}
+.btn-3 {
+  margin-right: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.sec-one-div-two p {
+  margin-top: 0;
+  margin-bottom: 0;
 }

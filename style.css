@@ -33,6 +33,20 @@ body {
 .nav-g {
   color: #ff42a5;
 }
+
+@media screen and (max-width: 576) {
+  .nav,
+  .sec-gamer {
+    flex-direction: column;
+  }
+  .nav-icon,
+  .nav-content {
+    flex-direction: column;
+  }
+  .nav-content {
+    flex-direction: column;
+  }
+}
 /* nav-content */
 
 .nav-a {
@@ -62,13 +76,27 @@ body {
   border-radius: 8px;
   background-color: rgba(11, 2, 35, 0.1);
 }
+.btn {
+  cursor: pointer;
+}
 
 .btn-icon {
   margin-right: 16px;
 }
 
 /* header banner */
+.banner-icon {
+  display: flex;
 
+  align-items: center;
+}
+.banner-icon img {
+  height: 24px;
+  margin-right: 12px;
+}
+.banner-text {
+  margin-bottom: 40px;
+}
 .header-banner {
   margin: 0 240px;
   display: flex;
@@ -118,7 +146,6 @@ body {
 }
 .primary-btn {
   color: #fff;
-  /* font-size: 1.5rem; */
   font-weight: 600;
   padding: 21px 40px;
   border-radius: 48px;
@@ -160,6 +187,7 @@ body {
   font-size: 1.1rem;
 
   font-weight: 400;
+  max-width: 520px;
 }
 .btn-3 {
   margin-right: 0px;
@@ -169,4 +197,233 @@ body {
 .sec-one-div-two p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* online-games */
+
+.online-cards {
+  display: flex;
+  padding: 0 240px 0 240px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.online-card {
+  width: 342px;
+}
+.img {
+  height: 400px;
+  background-color: black;
+  border-radius: 16px;
+  opacity: 1;
+}
+.primary-title {
+  text-align: center;
+  color: #0b0223;
+
+  font-size: 3rem;
+
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 0;
+}
+.primary-text {
+  text-align: center;
+  color: #534c64;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0;
+  margin-bottom: 48px;
+}
+
+.online-color {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.card-image {
+  height: 400px;
+}
+
+.card-text {
+  position: relative;
+  bottom: 100px;
+  color: #534c64;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+.overlay {
+  position: relative;
+  text-align: center;
+  bottom: 250px;
+  height: 100;
+  width: 100;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.overlay p {
+  font-size: 1.3rem;
+  color: #ff42a5;
+  font-weight: 600;
+}
+.online-card:hover {
+  .overlay {
+    opacity: 1;
+  }
+  .card-image {
+    opacity: 0.5;
+  }
+}
+/* play-instantly */
+
+.play-instantly {
+  height: 400px;
+  display: flex;
+  padding: 0 240px 360px 430px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.play-inst-box-outer {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 260px;
+}
+.play-inst-box-inner {
+  width: 350px;
+  height: 350px;
+}
+
+.play-title {
+  text-align: right;
+}
+
+.play-inst-text {
+  text-align: right;
+  color: #534c64;
+
+  font-size: 1.1rem;
+
+  font-weight: 400;
+}
+.play-card-big {
+  height: 650px;
+}
+.play-card-small {
+  position: relative;
+  bottom: 300px;
+  right: 25%;
+}
+/* mini-cards */
+.card-img {
+  height: 60px;
+  width: 60px;
+}
+.mini-card-text {
+  color: #0b0223;
+
+  font-size: 1.3rem;
+
+  font-weight: 600;
+}
+
+.mini-cards-first,
+.mini-cards-second {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  margin-left: 40px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+}
+.mini-cards-first {
+  margin-bottom: 60px;
+}
+.mini-card-text {
+  color: #0b0223;
+
+  font-size: 1.3rem;
+
+  font-weight: 600;
+}
+.cards:hover {
+  border: 1px solid pink;
+  cursor: pointer;
+}
+.mini-cards-sec {
+  margin-bottom: 100px;
+}
+.card-img {
+  margin-right: 10px;
+}
+
+/* footer */
+
+#footer-title {
+  color: #fff;
+
+  font-size: 3rem;
+
+  font-weight: 700;
+}
+footer {
+  background-image: url("./images/Group\ 14.png");
+  background-color: #0b0223;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav {
+  margin: 0 0 60px 0;
+}
+.footer-nav li {
+  list-style: none;
+  margin: 10px 60px 10px 0;
+}
+.footer-nav li a {
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 1.1rem;
+
+  font-weight: 600;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.footer-icon {
+  margin-right: 40px;
+}
+#footer-sec-nav-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+}
+#footer-sec-nav {
+  margin-bottom: 20px;
+}
+.last-line {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+.last {
+  padding-bottom: 130px;
 }

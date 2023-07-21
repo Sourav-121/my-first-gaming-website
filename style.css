@@ -65,3 +65,68 @@ body {
 .btn-icon {
   margin-right: 16px;
 }
+
+/* header banner */
+
+.header-banner {
+  margin: 0 240px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-left {
+  width: 900px;
+  height: 700px;
+
+  background-image: url("./images/Vector\ 2.png");
+}
+
+.banner-left-tile {
+  color: #0b0223;
+
+  font-size: 3rem;
+  margin-top: 148px;
+  margin-bottom: 0;
+  font-weight: 600;
+  width: 355px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.goat {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 6rem;
+
+  font-weight: 800;
+
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-text {
+  width: 355px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-btn {
+  display: flex;
+  width: 355px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.primary-btn {
+  color: #fff;
+  /* font-size: 1.5rem; */
+  font-weight: 600;
+  padding: 21px 40px;
+  border-radius: 48px;
+  margin-right: 24px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+}
+.banner-image-1 {
+  margin-bottom: 20px;
+}
+.banner-img-23-1 {
+  margin-right: 100px;
+}
